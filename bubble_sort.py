@@ -1,11 +1,21 @@
 def bubble_sort(list):
     
-    for i in range(len(list)) : 
+    n = len(list)
+    
+    for i in range(n) : 
         
-        for j in range(len(list)-1) :
+        #after first passes if swapped tracker remain false, it mean all items are sorted,
+        # unnecessary iteration and comparison is reduced by this
+        swapped = False  #swapped tracked added
+        
+        for j in range(n-i-1) :
             
             if list[j] > list[j+1] :
                 list[j], list[j+1] = list[j+1], list[j]
+                swapped = True
+            
+        if not swapped:    # same as "if swapped is False"
+            break
                 
     return list
 

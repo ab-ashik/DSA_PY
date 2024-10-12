@@ -2,7 +2,7 @@ def bubble_sort(list):
     
     n = len(list)
     
-    for i in range(n) : 
+    for i in range(n-1) : 
         
         #after first passes if swapped tracker remain false, it mean all items are sorted,
         # unnecessary iteration and comparison is reduced by this

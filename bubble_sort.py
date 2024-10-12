@@ -19,7 +19,7 @@ def bubble_sort(list):
                 
     return list
 
-data_list = [15, 8, 11, 5, 9, 19, 2]
+data_list = list(map(int, input("Enter list of integers you want to sort : ").split()))
 
 print(f"Unsorted List : {data_list}")
 

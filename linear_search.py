@@ -13,4 +13,4 @@ result = linear_search(array, search_for)
 if result == -1:
     print("Searched Value not found")
 else:
-    print("Seached value is found. It is at index : ", result)
+    print("Searched value is found. It is at index : ", result)
